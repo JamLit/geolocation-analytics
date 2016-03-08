@@ -1,0 +1,13 @@
+PODS:
+  - Eureka (1.4.1)
+  - FileKit (2.0.0)
+
+DEPENDENCIES:
+  - Eureka (~> 1.3)
+  - FileKit (~> 2.0.0)
+
+SPEC CHECKSUMS:
+  Eureka: 2f1921d3162491921d2fef3b516bc4ef93a05122
+  FileKit: fd360f82f62a1f70dd2ccdbe0950d3a6d1e25d1d
+
+COCOAPODS: 0.39.0

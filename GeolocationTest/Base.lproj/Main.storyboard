@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GSE-tx-KhI">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Location Analytics-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GeolocationTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,9 +18,142 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Location Analytics" id="4T2-fS-5Nf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1838" y="-864"/>
+        </scene>
+        <!--Log Files-->
+        <scene sceneID="DDG-nm-tbF">
+            <objects>
+                <viewController id="X3u-9K-KRn" customClass="LogfilesViewController" customModule="GeolocationTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a0A-sf-YHy"/>
+                        <viewControllerLayoutGuide type="bottom" id="zZX-RV-81r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gd7-UT-OlW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o26-LA-H2c">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o26-LA-H2c" firstAttribute="top" secondItem="a0A-sf-YHy" secondAttribute="bottom" constant="-64" id="9oS-FU-xia"/>
+                            <constraint firstAttribute="trailing" secondItem="o26-LA-H2c" secondAttribute="trailing" id="L1Y-7H-fdi"/>
+                            <constraint firstItem="zZX-RV-81r" firstAttribute="top" secondItem="o26-LA-H2c" secondAttribute="bottom" id="aDJ-zA-QWR"/>
+                            <constraint firstItem="o26-LA-H2c" firstAttribute="leading" secondItem="gd7-UT-OlW" secondAttribute="leading" id="nv3-E0-Le0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Log Files" id="z2j-7q-hyF"/>
+                    <connections>
+                        <outlet property="tableView" destination="o26-LA-H2c" id="Z0u-Qa-TVz"/>
+                        <segue destination="7q8-9C-Yma" kind="show" identifier="logfileDetail" id="N5z-3V-DYT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B3m-qL-CFK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1838" y="59"/>
+        </scene>
+        <!--Logfile Detail View Controller-->
+        <scene sceneID="uMk-hg-l0a">
+            <objects>
+                <viewController id="7q8-9C-Yma" customClass="LogfileDetailViewController" customModule="GeolocationTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zp3-jK-cld"/>
+                        <viewControllerLayoutGuide type="bottom" id="B0V-VJ-bMI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m1u-7Z-g7j">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Detail" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hbF-rW-EmS">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="13"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hbF-rW-EmS" firstAttribute="leading" secondItem="m1u-7Z-g7j" secondAttribute="leading" id="JXm-dc-NZh"/>
+                            <constraint firstItem="B0V-VJ-bMI" firstAttribute="top" secondItem="hbF-rW-EmS" secondAttribute="bottom" id="Q33-Hp-xnR"/>
+                            <constraint firstItem="hbF-rW-EmS" firstAttribute="top" secondItem="m1u-7Z-g7j" secondAttribute="top" id="R5t-YE-Dw0"/>
+                            <constraint firstAttribute="trailing" secondItem="hbF-rW-EmS" secondAttribute="trailing" id="p3E-SL-Fve"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="hbF-rW-EmS" id="QaL-vi-AdH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4oP-hb-elS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2614" y="59"/>
+        </scene>
+        <!--Geolocation-->
+        <scene sceneID="yH5-Yv-hR6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7YP-vr-vt7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Geolocation" image="radio" id="zYj-Td-PCa"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pwn-uF-fr2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zOO-du-63F"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ecd-er-Aca" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1102" y="-864"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Ylw-lU-4c5">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="GSE-tx-KhI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Tb4-9q-44S">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="7YP-vr-vt7" kind="relationship" relationship="viewControllers" id="ojx-dH-iX9"/>
+                        <segue destination="D7E-4S-jk0" kind="relationship" relationship="viewControllers" id="XX7-9f-jwF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qpP-4E-zg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="-368"/>
+        </scene>
+        <!--Logfiles-->
+        <scene sceneID="rwW-Cj-zVH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="D7E-4S-jk0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Logfiles" image="file" id="t5n-Br-ZFZ"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="179-wO-gzu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="X3u-9K-KRn" kind="relationship" relationship="rootViewController" id="vBA-5G-F0K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pyg-iW-PTa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1102" y="59"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="file" width="21" height="21"/>
+        <image name="radio" width="21" height="21"/>
+    </resources>
 </document>

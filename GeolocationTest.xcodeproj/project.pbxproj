@@ -14,6 +14,19 @@
 		C72C2B521C89C62B006CFD3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72C2B501C89C62B006CFD3A /* LaunchScreen.storyboard */; };
 		C72C2B5D1C89C62B006CFD3A /* GeolocationTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72C2B5C1C89C62B006CFD3A /* GeolocationTestTests.swift */; };
 		C72C2B681C89C62B006CFD3A /* GeolocationTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72C2B671C89C62B006CFD3A /* GeolocationTestUITests.swift */; };
+		C72C2B761C89CF0B006CFD3A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C72C2B751C89CF0B006CFD3A /* Podfile */; };
+		C751E9171C8B8AC600B9748E /* MWFWifiHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = C751E9161C8B8AC600B9748E /* MWFWifiHelpers.m */; };
+		C751E91A1C8B8F0300B9748E /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C751E9191C8B8F0300B9748E /* Formatter.swift */; };
+		C751E91C1C8B8FC400B9748E /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C751E91B1C8B8FC400B9748E /* Connectivity.swift */; };
+		C751E9201C8B9F0A00B9748E /* LocationEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C751E91F1C8B9F0A00B9748E /* LocationEnums.swift */; };
+		C751E9221C8BB2E700B9748E /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = C751E9211C8BB2E700B9748E /* Logging.swift */; };
+		C751E9241C8DD12900B9748E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C751E9231C8DD12900B9748E /* LocationManager.swift */; };
+		C751E9261C8DD41F00B9748E /* ApplicationStateObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C751E9251C8DD41F00B9748E /* ApplicationStateObservable.swift */; };
+		C751E9291C8E108D00B9748E /* LoggingDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C751E9281C8E108D00B9748E /* LoggingDataProvider.swift */; };
+		C751E92C1C8E157E00B9748E /* LogfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C751E92B1C8E157E00B9748E /* LogfilesViewController.swift */; };
+		C751E92E1C8E24E700B9748E /* LogfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C751E92D1C8E24E700B9748E /* LogfileDetailViewController.swift */; };
+		C751E9311C8E43F400B9748E /* NSTimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C751E9301C8E43F400B9748E /* NSTimerExtension.swift */; };
+		D8B1285EA4FBC0D2697D0693 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247595A71134E29159831C8D /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		247595A71134E29159831C8D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC0A7FA6E7A313BFDEE48CD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BFB90D61F99026E68CF2FBE3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C72C2B441C89C62A006CFD3A /* GeolocationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeolocationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C72C2B471C89C62A006CFD3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C72C2B491C89C62A006CFD3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +63,20 @@
 		C72C2B631C89C62B006CFD3A /* GeolocationTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeolocationTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C72C2B671C89C62B006CFD3A /* GeolocationTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationTestUITests.swift; sourceTree = "<group>"; };
 		C72C2B691C89C62B006CFD3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C72C2B751C89CF0B006CFD3A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C751E9141C8B8AC600B9748E /* GeolocationTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GeolocationTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		C751E9151C8B8AC600B9748E /* MWFWifiHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWFWifiHelpers.h; sourceTree = "<group>"; };
+		C751E9161C8B8AC600B9748E /* MWFWifiHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWFWifiHelpers.m; sourceTree = "<group>"; };
+		C751E9191C8B8F0300B9748E /* Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		C751E91B1C8B8FC400B9748E /* Connectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		C751E91F1C8B9F0A00B9748E /* LocationEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationEnums.swift; sourceTree = "<group>"; };
+		C751E9211C8BB2E700B9748E /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		C751E9231C8DD12900B9748E /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C751E9251C8DD41F00B9748E /* ApplicationStateObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationStateObservable.swift; sourceTree = "<group>"; };
+		C751E9281C8E108D00B9748E /* LoggingDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingDataProvider.swift; sourceTree = "<group>"; };
+		C751E92B1C8E157E00B9748E /* LogfilesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogfilesViewController.swift; sourceTree = "<group>"; };
+		C751E92D1C8E24E700B9748E /* LogfileDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogfileDetailViewController.swift; sourceTree = "<group>"; };
+		C751E9301C8E43F400B9748E /* NSTimerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTimerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8B1285EA4FBC0D2697D0693 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +105,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1861D72F5740A46E02C7255 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				247595A71134E29159831C8D /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C72C2B3B1C89C62A006CFD3A = {
 			isa = PBXGroup;
 			children = (
+				C72C2B751C89CF0B006CFD3A /* Podfile */,
 				C72C2B461C89C62A006CFD3A /* GeolocationTest */,
 				C72C2B5B1C89C62B006CFD3A /* GeolocationTestTests */,
 				C72C2B661C89C62B006CFD3A /* GeolocationTestUITests */,
 				C72C2B451C89C62A006CFD3A /* Products */,
+				E0078FBFDACCCDB0D4BD40D2 /* Pods */,
+				A1861D72F5740A46E02C7255 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +139,13 @@
 		C72C2B461C89C62A006CFD3A /* GeolocationTest */ = {
 			isa = PBXGroup;
 			children = (
+				C751E91D1C8B8FF000B9748E /* Helper */,
+				C739526F1C8EBED90089E213 /* Protocols */,
+				C751E91E1C8B9E1900B9748E /* Connectivity */,
+				C751E9271C8E0B3E00B9748E /* Location */,
+				C751E92A1C8E14F000B9748E /* Logging */,
+				C751E92F1C8E24F000B9748E /* View Controller */,
 				C72C2B471C89C62A006CFD3A /* AppDelegate.swift */,
-				C72C2B491C89C62A006CFD3A /* ViewController.swift */,
 				C72C2B4B1C89C62B006CFD3A /* Main.storyboard */,
 				C72C2B4E1C89C62B006CFD3A /* Assets.xcassets */,
 				C72C2B501C89C62B006CFD3A /* LaunchScreen.storyboard */,
@@ -125,6 +172,79 @@
 			path = GeolocationTestUITests;
 			sourceTree = "<group>";
 		};
+		C739526F1C8EBED90089E213 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C751E9251C8DD41F00B9748E /* ApplicationStateObservable.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		C751E9181C8B8DAF00B9748E /* Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				C751E9151C8B8AC600B9748E /* MWFWifiHelpers.h */,
+				C751E9161C8B8AC600B9748E /* MWFWifiHelpers.m */,
+				C751E9141C8B8AC600B9748E /* GeolocationTest-Bridging-Header.h */,
+			);
+			name = "Objective-C";
+			sourceTree = "<group>";
+		};
+		C751E91D1C8B8FF000B9748E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C751E9191C8B8F0300B9748E /* Formatter.swift */,
+				C751E9301C8E43F400B9748E /* NSTimerExtension.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		C751E91E1C8B9E1900B9748E /* Connectivity */ = {
+			isa = PBXGroup;
+			children = (
+				C751E91B1C8B8FC400B9748E /* Connectivity.swift */,
+				C751E9181C8B8DAF00B9748E /* Objective-C */,
+			);
+			name = Connectivity;
+			sourceTree = "<group>";
+		};
+		C751E9271C8E0B3E00B9748E /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				C751E91F1C8B9F0A00B9748E /* LocationEnums.swift */,
+				C751E9231C8DD12900B9748E /* LocationManager.swift */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
+		C751E92A1C8E14F000B9748E /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				C751E9211C8BB2E700B9748E /* Logging.swift */,
+				C751E9281C8E108D00B9748E /* LoggingDataProvider.swift */,
+			);
+			name = Logging;
+			sourceTree = "<group>";
+		};
+		C751E92F1C8E24F000B9748E /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C72C2B491C89C62A006CFD3A /* ViewController.swift */,
+				C751E92B1C8E157E00B9748E /* LogfilesViewController.swift */,
+				C751E92D1C8E24E700B9748E /* LogfileDetailViewController.swift */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		E0078FBFDACCCDB0D4BD40D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFB90D61F99026E68CF2FBE3 /* Pods.debug.xcconfig */,
+				3BC0A7FA6E7A313BFDEE48CD /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +252,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C72C2B6C1C89C62B006CFD3A /* Build configuration list for PBXNativeTarget "GeolocationTest" */;
 			buildPhases = (
+				149C9A522EE91E9AE2F486A8 /* Check Pods Manifest.lock */,
 				C72C2B401C89C62A006CFD3A /* Sources */,
 				C72C2B411C89C62A006CFD3A /* Frameworks */,
 				C72C2B421C89C62A006CFD3A /* Resources */,
+				26FCBECD2C70B63D641984F6 /* Embed Pods Frameworks */,
+				337BCF5CE9223FBBF656F08C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +354,7 @@
 			files = (
 				C72C2B521C89C62B006CFD3A /* LaunchScreen.storyboard in Resources */,
 				C72C2B4F1C89C62B006CFD3A /* Assets.xcassets in Resources */,
+				C72C2B761C89CF0B006CFD3A /* Podfile in Resources */,
 				C72C2B4D1C89C62B006CFD3A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,13 +375,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		149C9A522EE91E9AE2F486A8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		26FCBECD2C70B63D641984F6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		337BCF5CE9223FBBF656F08C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C72C2B401C89C62A006CFD3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C751E92E1C8E24E700B9748E /* LogfileDetailViewController.swift in Sources */,
+				C751E92C1C8E157E00B9748E /* LogfilesViewController.swift in Sources */,
+				C751E9311C8E43F400B9748E /* NSTimerExtension.swift in Sources */,
 				C72C2B4A1C89C62A006CFD3A /* ViewController.swift in Sources */,
+				C751E9201C8B9F0A00B9748E /* LocationEnums.swift in Sources */,
+				C751E9241C8DD12900B9748E /* LocationManager.swift in Sources */,
 				C72C2B481C89C62A006CFD3A /* AppDelegate.swift in Sources */,
+				C751E9291C8E108D00B9748E /* LoggingDataProvider.swift in Sources */,
+				C751E9221C8BB2E700B9748E /* Logging.swift in Sources */,
+				C751E91C1C8B8FC400B9748E /* Connectivity.swift in Sources */,
+				C751E9261C8DD41F00B9748E /* ApplicationStateObservable.swift in Sources */,
+				C751E91A1C8B8F0300B9748E /* Formatter.swift in Sources */,
+				C751E9171C8B8AC600B9748E /* MWFWifiHelpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +531,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -386,7 +569,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -395,23 +578,34 @@
 		};
 		C72C2B6D1C89C62B006CFD3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFB90D61F99026E68CF2FBE3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GeolocationTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.mwfire.GeolocationTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GeolocationTest/GeolocationTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		C72C2B6E1C89C62B006CFD3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BC0A7FA6E7A313BFDEE48CD /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GeolocationTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.mwfire.GeolocationTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GeolocationTest/GeolocationTest-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -482,6 +676,7 @@
 				C72C2B6E1C89C62B006CFD3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C72C2B6F1C89C62B006CFD3A /* Build configuration list for PBXNativeTarget "GeolocationTestTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +685,7 @@
 				C72C2B711C89C62B006CFD3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C72C2B721C89C62B006CFD3A /* Build configuration list for PBXNativeTarget "GeolocationTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +694,7 @@
 				C72C2B741C89C62B006CFD3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
